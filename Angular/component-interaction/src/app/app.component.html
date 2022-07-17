@@ -1,0 +1,10 @@
+<div style="text-align: center">
+  <h1>{{ title }}</h1>
+  <app-test [parentData1]="name"></app-test>
+  <hr />
+  <app-test2 [parentData2]="name"></app-test2>
+  <hr />
+  <app-test3 (childEvent)="message = $event"></app-test3>
+  <h2>{{ message }}</h2>
+</div>
+<router-outlet></router-outlet>
